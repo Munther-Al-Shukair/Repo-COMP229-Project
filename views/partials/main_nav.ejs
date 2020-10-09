@@ -1,0 +1,62 @@
+  <!-- Main Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/"> <img src="\Assest\images\logo.pnp"> COMP229</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    <!-- list of the content in the navigation bar-->
+      <ul class="navbar-nav ml-auto">
+        
+    
+        <!-- ejs express to set the element active if is it active otherwise to no active-->
+          <% if (title =="Home") { %> 
+            <li class="nav-item active">
+              <% } else{ %>
+                <li class="nav-item">
+                  <% } %> 
+          <a class="nav-link" href="/home"><i class="fas fa-laptop-house"></i>Home</a>
+        </li>
+        <% if (title =="About") { %> 
+          <li class="nav-item active">
+            <% } else{ %>
+              <li class="nav-item">
+                <% } %> 
+
+          <a class="nav-link" href="/about"><i class="fas fa-info"></i> About</a>
+        </li>
+        <% if (title =="Services") { %> 
+          <li class="nav-item active">
+            <% } else{ %>
+              <li class="nav-item">
+                <% } %> 
+
+          <a class="nav-link" href="/services"><i class="fas fa-cogs"></i> Services</a>
+        </li>
+        <% if (title =="Contact") { %> 
+          <li class="nav-item active">
+            <% } else{ %>
+              <li class="nav-item">
+                <% } %> 
+
+          <a class="nav-link" href="/contact"><i class="fas fa-phone-volume"></i> Contact us</a>
+        </li>
+        <% if (title =="Projects") { %> 
+          <li class="nav-item active">
+            <% } else{ %>
+              <li class="nav-item">
+                <% } %> 
+
+          <a class="nav-link" href="/projects"><i class="fas fa-border-top"></i> Projects</a>
+        </li>
+        </li>
+        
+
+        
+    </div>
+  </nav>
+  <script src="/jquery/dist/jquery.min.js"></script>
+    <script src="/bootsstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/Scripts/app.js"></script>
