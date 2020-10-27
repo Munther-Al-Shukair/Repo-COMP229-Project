@@ -1,0 +1,37 @@
+
+<!-- express to include header in the page -->
+<%- include partials/header.ejs %>
+
+<!-- to include the main nav in the page-->
+<%- include partials/main_nav.ejs %> 
+
+<main class="container">
+    <div class="jumbotron">
+      <h1 class="display-8"><p> my contact information:<br> Phone number:+1(647)-712-9287<br>Email adress: mualshuka@my.centennialcollege.ca</p></h1>
+
+    </div>
+    <form>
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname">
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname"><br>
+      <label for="ContactNumber">Contact Number:</label>
+      <input type="text" id="ContactNumber" name="ContactNumber">
+      <label for="EmailAddress">Email Address:</label>
+      <input type="text" id="EmailAddress" name="EmailAddress"><br>
+      <label for="Message">Message:</label>
+      <input type="text" id="Message" name="Message"><br>
+      <input type="submit" value="Submit">
+      <p>Email me: <a href="mailto:monthershqair@gmail.com">Send email</a></p>
+      <p>or, call me at: <a href="tel:+4733378901">+16477129287</a></p>
+       <a href="/home">home page</a>
+
+    </form>
+    
+
+  </main>
+  <!-- to include the a static bottom in the page-->
+<%- include partials/bottom_nav.ejs %> 
+
+  <!-- include the footer in the page-->
+<%- include partials/footer.ejs %> 
